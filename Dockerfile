@@ -1,15 +1,13 @@
 FROM node:boron
 
-# Create app directory
-RUN mkdir -p /usr/src/roomsquickly
-WORKDIR /usr/src/roomsquickly
+RUN mkdir roomsquickly
+WORKDIR roomsquickly
 
-# Install app dependencies
-COPY package.json /usr/src/roomsquickly/
+COPY package.json /roomsquickly
 RUN npm install
 
-# Bundle app source
-COPY . /usr/src/app
+COPY . /roomsquickly
 
 EXPOSE 3000
-CMD [ "npm", "start" ]
+
+CMD [ "npm", "start" ]	
