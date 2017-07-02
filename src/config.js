@@ -1,3 +1,7 @@
+/**
+ * Created by M-Rayees on 02/07/2017.
+ */
+
 module.exports = {
 	database: {
 		getConnectionString: function(env) {
