@@ -4,10 +4,12 @@ mongoose.Promise = global.Promise;
 module.exports = {
 	connect: function(url) {
 		mongoose.connect(url, (error) => {
-			// if (!error)
+			if (!error){
 				console.log('Connected to Database');
-			// else
-				// console.log(error);
+			}
+			else{
+				console.log(error);
+			}
 		})
 	},
 	close:function(){
