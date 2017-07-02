@@ -1,6 +1,6 @@
 {
   "name": "roomsquickly",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
@@ -13,7 +13,6 @@
     "debug": "~2.6.3",
     "express": "~4.15.2",
     "faker": "^4.1.0",
-    "ink-docstrap": "^1.3.0",
     "mongoose": "^4.10.8",
     "morgan": "~1.8.1",
     "serve-favicon": "~2.4.2"
