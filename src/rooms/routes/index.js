@@ -1,5 +1,5 @@
 /**
- * Created by M-Rayees on 6/24/2017.
+ * Created by M-Rayees on 02/07/2017.
  */
 
 const express = require("express");
@@ -11,7 +11,7 @@ router.route("/")
 	.get(Rooms.getRoomsOnAuction)
 router.route("/startAuction/:id")
 	.get(Rooms.auctionSingleRoom)
-router.route("/startAuction/all")
+router.route("/auction/all")
 	.get(Rooms.auctionAllRooms)
 
 
