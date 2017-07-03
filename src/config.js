@@ -9,7 +9,7 @@ module.exports = {
 			}
 		},
 		dev: {
-			host: "mongodb://localhost/",
+			host: "mongodb://mongo/",
 			name: "roomsquickly"
 		},
 		production: {
