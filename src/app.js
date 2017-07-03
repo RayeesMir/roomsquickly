@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({
 const rooms = require('./rooms/routes');
 const bids = require('./bids/routes');
 app.use(express.static(path.join(__dirname, 'out/roomsquickly/0.0.0/')));
-app.use('/rooms', rooms)
-app.use('/bids', bids)
+app.use('/api/v1/rooms', rooms)
+app.use('/api/v1/bids', bids)
 
 module.exports=app;

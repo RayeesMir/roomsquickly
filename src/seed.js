@@ -3,8 +3,8 @@ const PartnerModel = require("./partners/models");
 const RoomModel = require("./rooms/models");
 const config = require('./config')
 require('./db').connect(config.database.getConnectionString("dev"));
-const numberOfRooms = parseInt(process.argv[3]) || 10;
 const numberOfPartners = parseInt(process.argv[2]) || 5;
+const numberOfRooms = parseInt(process.argv[3]) || 10;
 
 function createPartner(partners) {
 	PartnerModel.insertMany(partners, (error, rooms) => {
