@@ -23,12 +23,12 @@ function sendNotification(room) {
 				json: true
 			};
 			// http.request(options, (error, body, response) => {
-				// if (!error && response.statusCode == 200) {
-					console.log("notification send succesfully")
+			// if (!error && response.statusCode == 200) {
+			console.log("notification send succesfully")
 				// } else {
-					// console.log("Error Sending Notification")
+				// console.log("Error Sending Notification")
 				// }
-			// });
+				// });
 		})
 		.catch((error) => {
 			console.log(error);
@@ -127,6 +127,8 @@ module.exports = {
 					updateOldWinner(room.winner._id);
 					room.winner = newBid._id;
 					newBid.winner = true;
+				} else {
+					newBid.winner = false;
 				}
 			} else {
 				room.winner = newBid._id;

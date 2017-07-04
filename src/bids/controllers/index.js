@@ -1,5 +1,10 @@
+
 const Bid = require('../lib');
 const ResponseHandler = require('../../utils/response');
+/**
+ * @module Bids Controllers
+ * @type {Object}
+ */
 module.exports = {
 	/**
 	 * Return Bid That has been Created with Winner true or False
@@ -23,9 +28,9 @@ module.exports = {
 			})
 	},
 	/** Return All Bids By Room Id Unique To Partners 
-	 * @param  {[Object]}
-	 * @param  {[Object]}
-	 * @return {[Object]}
+	 * @param  {[request]}
+	 * @param  {[response]}
+	 * @return {[Bids]}
 	 */
 	getBidByRoomId: function(request, response) {
 		const skip = parseInt(request.query.skip) || 0;
