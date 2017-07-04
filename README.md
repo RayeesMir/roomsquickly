@@ -37,8 +37,8 @@
  ### EndPoints
   ### Rooms
       * /api/v1/rooms        
-      *   /api/v1/startAuction/:id          
-      *   /api/v1/auction/all
+      *   /api/v1/rooms/startAuction/:id          
+      *   /api/v1/rooms/auction/all
   ### Bids
       *   /api/v1/bids/auction
       *   /api/v1/bids/room/:roomId
