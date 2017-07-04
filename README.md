@@ -2,7 +2,7 @@
    
 ### What is this repository for? ###
 
-* Code Challange From HotelQuickly.
+*  Auction Rooms.
 * Version 1.0   
 
 ### Requirements ###
@@ -33,29 +33,13 @@
    Didn't use Redis but can be used for Caching.   
  ### EndPoints
   ### Rooms
-      *  /api/v1/rooms
-          * Method GET
-          * Return All Auctionable Rooms Ordered by Time Remainig For Bidding.
-      *   /api/v1/startAuction/:id
-          * Method GET
-          * If you want start Auction for single room,This route can be used from dashboard. Room will be auctionable on for 10 minutes.
+       * /api/v1/rooms:        
+      *   /api/v1/startAuction/:id          
       *   /api/v1/auction/all
-          * Method GET
-          * If you want start Auction for All rooms,This will make all rooms auctionable in database.All Rooms will be auctionable on for 10 minutes.
   ### Bids
       *   /api/v1/bids/auction
-    Method POST
-        * This Endpoint is used top post a bid for room that.
-        * Data to be posted is like this 
-          `{
-            "partnerId":"partnerId",
-            "roomId":"roomId",
-            "amount":"amount"
-          }`
       *   /api/v1/bids/room/:roomId
-        * Methods GET
       *   /api/v1/bids/:bidId
-        * METHOD GET 
 ### Who do I talk to? ###
 
 * mail me on mirrayees859@gmail.com
