@@ -43,7 +43,7 @@
       *   /api/v1/bids/auction
       *   /api/v1/bids/room/:roomId
       *   /api/v1/bids/:bidId
-For All Of these Endpoint documnetation inside apidocs folder in app. 
+For All Of these Endpoint documentation is avaliable inside apidocs folder of app. 
 ### Who do I talk to? ###
 
 * mail me on mirrayees859@gmail.com
